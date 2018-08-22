@@ -19,3 +19,10 @@ podman run --rm -it -v /opt/oc_cli:/root/.kube paulfantom/openshift-client help
 ```sh
 docker run --rm -it -v oc_cli:/root/.kube paulfantom/openshift-client help
 ```
+
+### Bash alias
+
+Add it to your bash aliases and use as if it was installed on host:
+```sh
+alias oc="docker run --rm -it -v oc_cli:/root/.kube paulfantom/openshift-client"
+```
