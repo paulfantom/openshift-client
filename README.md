@@ -1,3 +1,5 @@
+[![Docker Automated build](https://img.shields.io/docker/automated/paulfantom/openshift-client.svg)](https://hub.docker.com/r/paulfantom/openshift-client/)
+
 # OpenShift Client Tools in a container
 
 This is based on initial work from https://github.com/e-bits/openshift-client
