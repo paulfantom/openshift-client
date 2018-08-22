@@ -6,12 +6,13 @@ This is based on initial work from https://github.com/e-bits/openshift-client
 
 ## Run
 
-To allow for peristent config, we mount `/root/.kube` configuration into a named volume `oc_cli`.
+To allow for peristent config, we need to mount `/root/.kube` directory.
 
 #### With podman
 
 ```sh
-podman run --rm -it -v oc_cli:/root/.kube paulfantom/openshift-client help
+mkdir /opt/oc_cli
+podman run --rm -it -v /opt/oc_cli:/root/.kube paulfantom/openshift-client help
 ```
 
 #### With docker
